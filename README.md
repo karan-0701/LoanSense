@@ -1,19 +1,33 @@
-# Loan Prediction Project
+# LoanSense Project
 
 ## Setup
+Install dependencies:
 ```bash
 pip install -r requirements.txt
+```
 
-Run Deep Learning Training
-python src/pipeline/dl_training_pipeline.py
+## Run Training Pipeline
+From the project root, run:
+* Train both DL and RL models (default):
 
-Run Reinforcement Learning Training
-python src/pipeline/rl_training_pipeline.py
+```bash
+python src/main.py
+```
 
-Notes
+* Train only DL model:
 
-Raw data: data/raw/
+```bash
+python src/main.py --model dl
+```
 
-Processed data: data/processed/
+* Train only RL agent:
 
-Models saved: models/
+```bash
+python src/main.py --model rl
+```
+
+## Project Structure
+* `data/raw/` – place raw CSVs here
+* `data/processed/` – processed data saved here
+* `models/` – trained models saved here
+* `src/` – source code and pipelines
