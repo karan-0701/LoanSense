@@ -31,3 +31,5 @@ python src/main.py --model rl
 * `data/processed/` – processed data saved here
 * `models/` – trained models saved here
 * `src/` – source code and pipelines
+
+### Read the project report for detailed analysis
